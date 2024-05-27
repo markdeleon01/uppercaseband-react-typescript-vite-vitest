@@ -1,0 +1,12 @@
+.release-item {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.release-thumbnail {
+	width: 300px;
+	height: 300px;
+	padding-bottom: 10px;
+}
+.release-title {
+	font-weight: bold;
+}

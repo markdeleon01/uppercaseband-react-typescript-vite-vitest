@@ -2,6 +2,9 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import PageLayout from './components/PageLayout'
 import Home from './pages/Home'
+import About from './pages/About'
+import Discography from './pages/Discography'
+import Events from './pages/Events'
 
 function App() {
 	const router = createBrowserRouter([
@@ -16,6 +19,18 @@ function App() {
 				{
 					path: '/home',
 					element: <Home />
+				},
+				{
+					path: '/about',
+					element: <About />
+				},
+				{
+					path: '/discography',
+					element: <Discography />
+				},
+				{
+					path: '/events',
+					element: <Events />
 				}
 			]
 		}
