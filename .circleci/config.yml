@@ -32,6 +32,16 @@ jobs:
           name: Run unit tests
           command: npm run test
 
+      - run:
+          name: Install Xvfb - Cypress required dependency
+          command: |
+            npm run install:xvfb
+
+      - run:
+          name: Run Cypress Tests
+          command: |
+            npm run cy:run-unit && npm run cy:e2e
+
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
