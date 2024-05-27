@@ -1,6 +1,7 @@
 import { defineConfig } from 'cypress'
 
 export default defineConfig({
+	projectId: 'x69sq8',
 	env: {
 		codeCoverage: {
 			include: 'cypress/**/*.*'
