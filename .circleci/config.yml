@@ -33,6 +33,10 @@ jobs:
           command: npm run test
 
       - run:
+          name: Run tests coverage
+          command: npm run coverage
+
+      - run:
           name: Install Xvfb - Cypress required dependency
           command: |
             npm run install:xvfb
@@ -41,6 +45,11 @@ jobs:
           name: Run Cypress Tests
           command: |
             npm run cy:run-unit && npm run cy:e2e
+
+      - run:
+          name: Create Istanbul coverage badges
+          command: |
+            npm run make-badges:ci
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows

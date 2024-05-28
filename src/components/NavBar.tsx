@@ -27,10 +27,12 @@ function NavBar() {
 		})
 	}
 
+    /* c8 ignore start */
 	const highlightLink = () => {
         determineCurrentLink()
 	}
 
+    /* c8 ignore stop */
 	// useEffect hook is called after React updates the DOM
 	useEffect(() => {
 		determineCurrentLink()

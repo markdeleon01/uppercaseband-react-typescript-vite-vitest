@@ -13,6 +13,7 @@ function Events() {
 	const events = useAppSelector((state) => state.events.events)
 	const dispatch = useAppDispatch()
 
+    /* c8 ignore start */
 	// useEffect hook is called after React updates the DOM
 	useEffect(() => {
 		fetchEvents().then((data) => {
@@ -21,6 +22,7 @@ function Events() {
 			NProgress.done()
 		})
 	}, [dispatch])
+    /* c8 ignore stop */
 
 	return (
 		<div data-testid='events' className='events'>

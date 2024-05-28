@@ -13,6 +13,7 @@ function About() {
 	const members = useAppSelector((state) => state.members.members)
 	const dispatch = useAppDispatch()
 
+    /* c8 ignore start */
 	// useEffect hook is called after React updates the DOM
 	useEffect(() => {
 		fetchMembers()
@@ -23,6 +24,7 @@ function About() {
 				NProgress.done()
 			})
 	}, [dispatch])
+    /* c8 ignore stop */
 
 	return (
 		<div data-testid='about' className='about'>

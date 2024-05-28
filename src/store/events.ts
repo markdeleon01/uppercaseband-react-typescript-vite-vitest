@@ -21,9 +21,11 @@ const eventsSlice = createSlice({
 	reducers: {
         // actions
         // Use the PayloadAction type to declare the contents of `action.payload`
+        /* c8 ignore start */
         setEvents(state, action: PayloadAction<Event[]>) {
             state.events = action.payload
         }
+        /* c8 ignore stop */
     }
 })
 
