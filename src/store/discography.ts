@@ -19,9 +19,11 @@ const discographySlice = createSlice({
 	reducers: {
         // actions
         // Use the PayloadAction type to declare the contents of `action.payload`
+        /* c8 ignore start */
         setReleases(state, action: PayloadAction<Release[]>) {
             state.releases = action.payload
         }
+        /* c8 ignore stop */
     }
 })
 

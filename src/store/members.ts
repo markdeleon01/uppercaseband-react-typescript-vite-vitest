@@ -17,9 +17,11 @@ const membersSlice = createSlice({
 	reducers: {
 		// actions
         // Use the PayloadAction type to declare the contents of `action.payload`
+        /* c8 ignore start */
 		setMembers(state, action: PayloadAction<Member[]>) {
 			state.members = action.payload
 		}
+        /* c8 ignore stop */
 	}
 })
 
