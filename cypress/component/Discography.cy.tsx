@@ -1,4 +1,3 @@
-import React from 'react'
 import Discography from '../../src/pages/Discography'
 
 import { Provider } from 'react-redux'

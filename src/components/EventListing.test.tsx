@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react'
+import { describe, test, expect } from 'vitest'
 import EventListing from './EventListing'
 
 describe('With React Testing Library', () => {

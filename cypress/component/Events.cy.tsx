@@ -1,4 +1,3 @@
-import React from 'react'
 import Events from '../../src/pages/Events'
 
 import { Provider } from 'react-redux'

@@ -6,6 +6,7 @@
 		"module": "ESNext",
 		"skipLibCheck": true,
 		"types": ["vitest/globals", "@testing-library/jest-dom"],
+		"forceConsistentCasingInFileNames": true,
 
 		/* Bundler mode */
 		"moduleResolution": "bundler",
@@ -21,6 +22,6 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
 	},
-	"include": ["src"],
+	"include": ["src", "cypress"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

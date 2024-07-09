@@ -1,4 +1,3 @@
-import React from 'react'
 import About from '../../src/pages/About'
 
 import { Provider } from 'react-redux'
