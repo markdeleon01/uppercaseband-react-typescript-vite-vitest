@@ -67,10 +67,10 @@ function About() {
 					Filipino Workers and Filipino migrants around the world.
 				</p>
 				<p>
-					The band released its newest single &quot;<i>Tanging Ikaw</i>&quot; on
-					February 9, 2019, which was featured on Spotify&apos;s New Music
-					Friday Philippines playlist on its debut week, and has enjoyed
-					popularity and heavy streaming from listeners in the Philippines.
+					The band released its newest singles &quot;<i>Tanging Ikaw</i>&quot; on
+					February 9, 2019, and &quot;<i>Ligaw Na Tadhana</i>&quot; on March 23, 2023 
+					which were featured on Spotify&apos;s New Music	Friday Philippines playlist on its debut week, 
+					and have enjoyed popularity and heavy streaming from listeners in the Philippines.
 				</p>
 			</div>
 		</div>
