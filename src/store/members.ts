@@ -7,13 +7,11 @@ export interface Member {
 	imageUrl: string
 }
 
-const members : Member[] = [];
-const initialState = { members: members };
-
+const membersList : Member[] = [];
 const membersSlice = createSlice({
     // `createSlice` will infer the state type from the `initialState` argument
 	name: 'members',
-	initialState,
+	initialState: { members: membersList },
 	reducers: {
 		// actions
         // Use the PayloadAction type to declare the contents of `action.payload`
