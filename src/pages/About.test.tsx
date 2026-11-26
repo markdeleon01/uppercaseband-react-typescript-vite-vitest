@@ -1,9 +1,13 @@
 import { render, screen } from '@testing-library/react'
-import { describe, test, expect } from 'vitest'
+import { describe, test, expect, vi } from 'vitest'
 import About from './About'
 
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store'
+
+vi.mock('../services/MemberService', () => ({
+	fetchMembers: vi.fn().mockResolvedValue([])
+}))
 
 describe('With React Testing Library', () => {
 	const initialState = {
