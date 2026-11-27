@@ -11,13 +11,11 @@ export interface Event {
     externalUrl: string
 }
 
-const events : Event[] = []
-const initialState = { events: events}
-
+const eventsList : Event[] = []
 const eventsSlice = createSlice({
     // `createSlice` will infer the state type from the `initialState` argument
 	name: 'events',
-	initialState,
+	initialState: { events: eventsList },
 	reducers: {
         // actions
         // Use the PayloadAction type to declare the contents of `action.payload`

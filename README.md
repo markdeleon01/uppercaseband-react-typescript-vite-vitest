@@ -26,18 +26,15 @@ The live site can be found on:  [Render](https://uppercaseband-react-typescript-
 npm install
 ```
 
-4.  Install JSON Server to simulate a backend REST service to deliver data in JSON format to the front-end application
+4.  JSON Server is installed with the project dependencies and simulates the backend REST API using _db.json_.
+
+5.  Run the mock API server on port 3000 (the port expected by the Vite API proxy)
 
 ```
-npm install -g json-server
+npm run api
 ```
 
-5.  JSON Server will use the _db.json_ file in the project folder to serve mock data as defined in the file
-6.  Run the mock API server
-
-```
-json-server --port 8080 --watch db.json
-```
+For Cypress end-to-end tests, `npm run cy:e2e` starts both the Vite app and the mock API server.
 
 ## Available Scripts
 

@@ -9,13 +9,11 @@ export interface Release {
     spotifyUrl: string
 }
 
-const releases : Release[] = []
-const initialState = { releases: releases}
-
+const releasesList : Release[] = []
 const discographySlice = createSlice({
     // `createSlice` will infer the state type from the `initialState` argument
 	name: 'discography',
-	initialState,
+	initialState: { releases: releasesList },
 	reducers: {
         // actions
         // Use the PayloadAction type to declare the contents of `action.payload`
