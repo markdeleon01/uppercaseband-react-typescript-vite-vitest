@@ -12,8 +12,6 @@ As a matter of interest and passion for JavaScript and music in general, I creat
 
 This project was bootstrapped with [Vite](https://www.npmjs.com/package/create-vite), and tested with [Vitest](https://vitest.dev/guide/).
 
-The live site can be found on:  [Render](https://uppercaseband-react-typescript-vite.onrender.com)
-
 
 
 ## Project setup
